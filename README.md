@@ -65,4 +65,7 @@ pip install -r requirements.txt
 
 # Run the app
 python app.py
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1d583d (Create README.md)
