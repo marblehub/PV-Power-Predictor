@@ -239,7 +239,12 @@ Thumbs.db
 
 # PyCharm / VSCode project settings
 .vscode/
+<<<<<<< HEAD
 .idea/
 
 # Static/media cache (if added)
 static/*.tmp
+=======
+*.pth
+*.pkl
+>>>>>>> 723fce6 (Update .gitignore)
