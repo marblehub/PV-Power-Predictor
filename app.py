@@ -41,16 +41,32 @@ def predict():
         return jsonify({"error": str(e)})
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> bd3a9a1 (Fix: bind to 0.0.0.0 and disable debug mode)
+=======
+>>>>>>> main
+=======
+>>>>>>> 9ad67dd (Update app.py)
 import os
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))  # required by Render
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
     app.run(host='0.0.0.0', port=port, debug=False)  # disable debug
 
 =======
     app.run(host='0.0.0.0', port=port, debug=False)  # disable debug
 >>>>>>> bd3a9a1 (Fix: bind to 0.0.0.0 and disable debug mode)
+=======
+    app.run(host='0.0.0.0', port=port, debug=False)  # disable debug
+
+>>>>>>> main
+=======
+    app.run(host='0.0.0.0', port=port, debug=False)  # disable debug
+
+>>>>>>> 9ad67dd (Update app.py)

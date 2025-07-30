@@ -23,7 +23,7 @@ A Flask-based web app that uses a trained artificial neural network (ANN) to pre
 ---
 
 ## 📁 Folder Structure
-pv_predictor/
+<pre> pv_predictor/
 ├── app.py
 ├── model.py
 ├── train.py
@@ -37,7 +37,7 @@ pv_predictor/
 │ └── favicon.ico
 └── templates/
 └── index.html
-
+</pre>
 
 ---
 
@@ -65,7 +65,3 @@ pip install -r requirements.txt
 
 # Run the app
 python app.py
-<<<<<<< HEAD
-
-=======
->>>>>>> b1d583d (Create README.md)

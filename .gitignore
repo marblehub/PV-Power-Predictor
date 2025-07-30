@@ -215,7 +215,6 @@ __pycache__/
 # Virtual environment
 venv/
 .env/
-<<<<<<< HEAD
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -231,20 +230,15 @@ instance/
 *.log
 
 # macOS / Linux / Windows system files
-=======
 *.log
->>>>>>> fafbe6a (Fix: bind to 0.0.0.0 and disable debug mode)
 .DS_Store
 Thumbs.db
 
 # PyCharm / VSCode project settings
 .vscode/
-<<<<<<< HEAD
 .idea/
 
 # Static/media cache (if added)
 static/*.tmp
-=======
 *.pth
 *.pkl
->>>>>>> 723fce6 (Update .gitignore)
