@@ -21,7 +21,7 @@ A Flask-based web app that uses a trained artificial neural network (ANN) to pre
 - Deployable via Render
 
 ---
-
+```
 ## 📁 Folder Structure
 <pre> pv_predictor/
 ├── app.py
@@ -37,7 +37,7 @@ A Flask-based web app that uses a trained artificial neural network (ANN) to pre
 │ └── favicon.ico
 └── templates/
 └── index.html
-</pre>
+```
 
 ---
 
