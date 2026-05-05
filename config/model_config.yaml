@@ -1,0 +1,4 @@
+model:
+  type: mlp
+  hidden_layer_sizes: [64, 32]
+  max_iter: 1000

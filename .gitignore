@@ -1,0 +1,52 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# =========================
+# MLflow
+# =========================
+mlruns/
+mlflow.db
+
+# =========================
+# Model artifacts (optional)
+# Keep ONLY if you want reproducible deploys
+# =========================
+# outputs/models/
+# artifacts/
+
+# =========================
+# Data (optional)
+# =========================
+# data/raw/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Logs
+# =========================
+*.log
