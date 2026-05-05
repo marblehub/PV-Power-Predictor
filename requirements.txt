@@ -1,0 +1,5 @@
+flask
+numpy
+torch
+scikit-learn==1.4.0
+joblib

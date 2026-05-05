@@ -1,0 +1,121 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #e0e7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #0369a1;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+form input[type="number"] {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0369a1;
+}
+
+.result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #ecfeff;
+    border-left: 4px solid #06b6d4;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #0f172a;
+}
+
+.toggle-btn {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    background-color: #facc15;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+
+/* 🌙 Dark Mode */
+body.dark {
+    background: #1e293b;
+    color: #f1f5f9;
+}
+
+body.dark .container {
+    background-color: #334155;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark input[type="number"],
+body.dark input[type="submit"] {
+    background-color: #475569;
+    color: #f8fafc;
+    border: 1px solid #64748b;
+}
+
+body.dark .result {
+    background-color: #0f172a;
+    border-left: 4px solid #0ea5e9;
+    color: #e2e8f0;
+}
+
+body.dark .toggle-btn {
+    background-color: #94a3b8;
+    color: #1e293b;
+}
+
+body.dark .logo {
+    filter: brightness(0.8);
+}
+

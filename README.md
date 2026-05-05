@@ -23,7 +23,7 @@ A Flask-based web app that uses a trained artificial neural network (ANN) to pre
 ---
 ```
 ## 📁 Folder Structure
-pv_predictor/
+<pre> pv_predictor/
 ├── app.py
 ├── model.py
 ├── train.py
@@ -60,9 +60,14 @@ cd pv-predictor
 python -m venv venv
 source venv/bin/activate  # or venv\\Scripts\\activate on Windows
 
+or Using conda:
+conda create -n myenv
+conda activate myenv
+
 # Install dependencies
 pip install -r requirements.txt
 
 # Run the app
 python app.py
-
+```
+## Happy Viewing!!!

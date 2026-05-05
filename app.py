@@ -1,0 +1,72 @@
+from flask import Flask, request, jsonify, render_template
+import torch
+import numpy as np
+import joblib
+from model import PVNet
+
+app = Flask(__name__)
+
+# Load model and scaler
+model = PVNet()
+model.load_state_dict(torch.load("pv_model.pth", map_location=torch.device('cpu')))
+model.eval()
+scaler = joblib.load("scaler.pkl")
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+    
+@app.route('/predict', methods=['POST'])
+def predict():
+    try:
+        # Load on demand
+        model = PVNet()
+        model.load_state_dict(torch.load("pv_model.pth", map_location="cpu"))
+        model.eval()
+
+        scaler = joblib.load("scaler.pkl")
+
+        temp = float(request.form['temperature'])
+        irr = float(request.form['irradiance'])
+        features = np.array([[temp, irr]])
+        features_scaled = scaler.transform(features)
+        input_tensor = torch.tensor(features_scaled, dtype=torch.float32)
+
+        with torch.no_grad():
+            output = model(input_tensor).item()
+
+        return render_template('index.html', prediction=f"{output:.3f} kW")
+
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> bd3a9a1 (Fix: bind to 0.0.0.0 and disable debug mode)
+=======
+>>>>>>> main
+=======
+>>>>>>> 9ad67dd (Update app.py)
+import os
+
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))  # required by Render
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    app.run(host='0.0.0.0', port=port, debug=False)  # disable debug
+
+=======
+    app.run(host='0.0.0.0', port=port, debug=False)  # disable debug
+>>>>>>> bd3a9a1 (Fix: bind to 0.0.0.0 and disable debug mode)
+=======
+    app.run(host='0.0.0.0', port=port, debug=False)  # disable debug
+
+>>>>>>> main
+=======
+    app.run(host='0.0.0.0', port=port, debug=False)  # disable debug
+
+>>>>>>> 9ad67dd (Update app.py)
