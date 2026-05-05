@@ -239,3 +239,5 @@ Thumbs.db
 
 # Static/media cache (if added)
 static/*.tmp
+mlruns/
+mlflow.db
