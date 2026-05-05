@@ -27,4 +27,5 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    #app.run(debug=True, port=5001) # for local server
+    app.run(host="0.0.0.0", port=10000) # for production server
