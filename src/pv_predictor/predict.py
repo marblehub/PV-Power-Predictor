@@ -1,5 +1,9 @@
 import joblib
-import numpy as np
+import pandas as pd
+
+
+FEATURE_COLUMNS = ["temperature", "irradiance"]
+
 
 def load_model():
     model = joblib.load("outputs/models/model.pkl")
@@ -8,6 +12,13 @@ def load_model():
 
 
 def predict(model, scaler, temperature, irradiance):
-    X = np.array([[temperature, irradiance]])
+    X = pd.DataFrame(
+        [[temperature, irradiance]],
+        columns=FEATURE_COLUMNS,
+    )
+
     X_scaled = scaler.transform(X)
-    return model.predict(X_scaled)[0]
+
+    prediction = model.predict(X_scaled)[0]
+
+    return round(float(prediction), 4)
