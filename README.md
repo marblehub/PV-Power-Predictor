@@ -2,6 +2,10 @@
 
 A production-ready machine learning system for predicting photovoltaic (PV) power output using temperature and irradiance.
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![Render](https://img.shields.io/badge/🤗-Live%20Demo-orange)](http://pv-predictor.onrender.com/)
+
 This project combines:
 
 * end-to-end ML pipeline design
